@@ -8,6 +8,8 @@ import React from "react";
 // @ts-ignore
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
-    <App />
+    <StrictMode>
+      <App />
+    </StrictMode>
   </BrowserRouter>
 );

@@ -5,6 +5,7 @@ import HorizontalScroll from "./partials/HorizontalScroll";
 import axios from "../utils/Axios";
 import Header from "./partials/Header";
 import DropDown from "./partials/DropDown";
+import Loader from "./Loader";
 
 const Home = () => {
   const [Trends, setTrends] = useState("");
@@ -26,7 +27,7 @@ const Home = () => {
   }, [category]);
 
   document.title = "MD | HomePage";
-  return (
+  return Trends ? (
     <>
       <div className="flex  justify-between   bg-[#1F1E24] w-screen min-h-screen">
         <SideBar />
@@ -46,7 +47,7 @@ const Home = () => {
         </div>
       </div>
     </>
-  );
+  ) : <Loader/>;
 };
 
 export default Home;
