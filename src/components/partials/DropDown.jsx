@@ -4,7 +4,7 @@ export default function DropDown({ options, func }) {
   
   return (
     <>
-      <select
+      <select 
         defaultValue={0}
         onChange={func}
         className="w-[20%]   text-lg outline-none border-none rounded text-zinc-200 "

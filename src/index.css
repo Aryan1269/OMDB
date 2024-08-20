@@ -12,10 +12,28 @@ secondary - #6556CD;
 
 ::-webkit-scrollbar {
     width: 7px;
-    height: 2px;
+    height: 10px;
+
+    -webkit-scrollbar-thumb:hover {
+        background-color: #a394df;
+    }
+
+    -webkit-scrollbar-track {
+        background-color: #f0f0f0;
+    }
+
+    -webkit-scrollbar-thumb:active {
+        background-color: #a394df;
+    }
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: #a394df;
     border-radius: 50px;
+    -webkit-transition: background-color 0.2s ease-in-out;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #a394df;
+    -webkit-transition: background-color 0.2s ease-in-out;
 }
